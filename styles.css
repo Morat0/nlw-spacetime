@@ -137,23 +137,27 @@ aside span {
   color: #9e9ea0;
 }
 /* dazer anota;óe sobre media na aula 4 */
-@media(max-width: 780px){
-
-  body{
-    grid-tamplate-colum: 1fr;
-    grid-tamplate-rows:0.2fr 0.8fr;
-    grid-template-areas:
-    "profile"
-    "timeline";
+@media (max-width: 768px){
+  :root {
+    font-size: 14px;
   }
 
-  aside{
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas: 
+    "profile"
+    "timeline";
+  } 
+
+  aside {
     border-right: none;
     padding: 32px 12px;
   }
 
-  nav{
-  overflow-y: auto;
-  padding: ;
-}
+  nav {
+    overflow-y: visible;
+    padding: 22px;
+  }
+
 }
